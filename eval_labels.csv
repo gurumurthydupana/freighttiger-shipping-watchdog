@@ -1,0 +1,17 @@
+route,week_of,expected_flagged,expected_note_id,source,why
+Delhi-Jaipur,2024-11-11,Yes,,brief sample,no note for this route in Nov 2024
+Ahmedabad-Mumbai,2025-01-20,No (justified),N002,brief sample,festival surcharge note dated that week
+Mumbai-Pune,2025-09-15,Yes,,brief sample,only N006 nearby and it says stable demand
+Chennai-Bangalore,2025-02-24,No (justified),N001,hand label,inside flood window Feb 24 - Mar 8
+Chennai-Bangalore,2025-03-03,No (justified),N001,hand label,inside flood window
+Chennai-Bangalore,2025-03-10,Yes,,hand label,N001 window ended Mar 8; roads passable from Mar 9
+Chennai-Bangalore,2025-03-17,Yes,,hand label,N009 says back to normal - cannot justify a rise
+Delhi-Jaipur,2024-11-18,Yes,,hand label,no note; N007 (May 2024) is about improvement
+Mumbai-Pune,2025-12-22,Yes,,hand label,slow creep; nothing in notes
+Mumbai-Delhi,2025-05-12,Yes,,hand label (judgment call),N003 says 5-7% but observed ~11.6%
+Mumbai-Pune,2025-06-16,Yes,,hand label (judgment call),diesel hit all routes so cannot explain gap vs peers
+Delhi-Chennai,2024-02-05,NOT_FLAGGED,,hand label,+8.5% own but only +7.8% vs peers - ordinary
+Delhi-Jaipur,2025-05-05,NOT_FLAGGED,,hand label,diesel week: everyone rose together
+Kolkata-Bhubaneswar,2025-05-26,NOT_FLAGGED,,hand label,+7.5% own but peers rose too
+Ahmedabad-Mumbai,2025-06-16,NOT_FLAGGED,,hand label,+6.7% own and peers flat to up
+Delhi-Jaipur,2024-01-01,NOT_FLAGGED,,hand label,first week of data - no history to compare with

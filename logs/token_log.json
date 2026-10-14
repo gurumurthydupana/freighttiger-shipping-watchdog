@@ -1,0 +1,14 @@
+{
+  "mode": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "llm_calls": 24,
+  "cache_hits": 0,
+  "input_tokens": 6981,
+  "output_tokens": 1672,
+  "estimated_input_tokens_if_run": 5363,
+  "estimated_output_tokens_if_run": 1440,
+  "cost_usd_at_list_price": 0.006274,
+  "cost_usd_on_free_tier": 0.0,
+  "output_rows": 24,
+  "llm_output_rejected_by_validator": 0
+}
