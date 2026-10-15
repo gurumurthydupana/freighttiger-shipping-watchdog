@@ -5,7 +5,7 @@ from pathlib import Path
 from notes import Note
 from verdict import Verdict
 
-MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")  # check the current free-tier model name in AI Studio
+MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")  # check the current free-tier model name in AI Studio
 URL = "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent"
 PRICE_IN_PER_M, PRICE_OUT_PER_M = 0.30, 2.50  # USD per 1M tokens, paid-tier list price; verify. Free tier = $0.
 CACHE_PATH = Path("cache/llm_cache.json")
@@ -107,7 +107,7 @@ class Explainer:
                 if e.code in (429, 500, 503):
                     time.sleep(2 ** attempt * 4)  # free tier rate limits
                     continue
-                raise
+                return None
         return None
 
     def reason(self, row, v: Verdict) -> str:
